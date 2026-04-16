@@ -1,0 +1,21 @@
+Analiza la siguiente lista de ingredientes de una receta, identifica sus cantidades (si no se especifican, asume cantidades razonables para una porción), y calcula la información nutricional.
+
+La respuesta debe ser un objeto JSON con el siguiente formato exacto:
+
+{{
+    "calorias": 0,
+    "proteinas": 0,
+    "carbohidratos": 0,
+    "grasas": 0
+}}
+
+Donde:
+- calorias: valor en kcal
+- proteinas: valor en gramos
+- carbohidratos: valor en gramos
+- grasas: valor en gramos
+
+Ingredientes de la receta:
+{ingredientes_medidos}
+
+La respuesta debe ser ÚNICAMENTE el objeto JSON, sin texto adicional. 
