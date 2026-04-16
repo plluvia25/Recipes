@@ -76,14 +76,14 @@ def main():
                 """
                 Application to demonstrate:
 
-                - Aplicación web Streamlit
-                - Plantillas de prompts
-                - LLMs via SDK proveedores                
-                - Generación de imágenes
-                - Guarda recetas en JSON
+                - Streamlit web application
+                - Prompt templates
+                - LLMs via provider SDKs
+                - Image generation
+                - Saves recipes in JSON
 
                 ---
-                --📝 GenAI Dev Workshop 2025  
+                --📝 GenAI Dev Workshop 2026  
                 🔖 v1.0.0
                 """
             )
