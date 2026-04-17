@@ -1,4 +1,4 @@
-Te daré información de una receta simple de cocina y necesito que generes el texto de un prompt para un generador de imágenes.
+Te daré información de una receta simple de cocina y necesito que generes el texto de un prompt para un generador de imágenes en ingles.
 
 Información de la receta:
 
@@ -11,8 +11,8 @@ Ingredientes:
 Instrucciones
 {instrucciones}
 
-Revisa el nombre de la receta, revisa los ingredientes y revisa las instrucciones.
+Revisa el nombre de la receta, revisa los ingredientes y revisa las instrucciones todas en ingles.
 
-Con toda esa información, imagina cómo será el platillo final y entonces genera un texto para un prompt detallado para un generador de imágenes de GenAI.
+Con toda esa información, imagina cómo será el platillo final y entonces genera un texto para un prompt detallado para un generador de imágenes de GenAI en ingles.
 
 Entrega solamente el texto del prompt.
