@@ -202,7 +202,7 @@ def muestra_info_comparativo(receta):
 
 
 def muestra_info_footer(receta):
-    mensaje = f"| **Proveedor:** {receta["proveedor"]} | **Creación:** {receta['fecha']} | **Ingredientes:** {', '.join(receta['iniciales'])} "
+    mensaje = f"| **Supplier:** {receta["proveedor"]} | **Creation:** {receta['fecha']} | **Ingredients:** {', '.join(receta['iniciales'])} "
     st.caption(mensaje)
 
 # Funciones de apoyo
