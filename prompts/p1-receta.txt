@@ -5,20 +5,20 @@ Si el JSON no es válido, vuelve a generarlo hasta que sea válido.
 No agregues texto adicional.
 Cierra correctamente todas las llaves.
 
-Generate the recipe in English.
+Genera la receta en ingles.
 Crea una receta de cocina muy simple utilizando los ingredientes que te voy a proporcionar.
 La respuesta debe ser un objeto JSON con el siguiente formato exacto:
 
 {{
-    "nombre": "Nombre corto de la receta, muy corto",
+    "nombre": "Nombre corto de la receta, muy corto en ingles",
     "ingredientes": [
-        "Lista simple de ingredientes con cantidades"
+        "Lista simple de ingredientes con cantidades en ingles"
     ],
     "instrucciones": [
-        "Lista simple de pasos a seguir"
+        "Lista simple de pasos a seguir en ingles"
     ],
     "notas": [
-        "Lista de notas o consejos (opcional)"
+        "Lista de notas o consejos (opcional) en ingles"
     ]
 }}
 
