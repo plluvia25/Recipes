@@ -9,7 +9,7 @@ def main():
 
     # Configura página y pone título
     st.set_page_config(layout="wide", page_icon="🧑‍🍳", page_title="Recetas AI")
-    st.title("🧑‍🍳 Recetas AI")
+    st.title("🧑‍🍳 Recipes AI")
 
     # Inicializa objetos de sesión si no existen
     if "receta_actual" not in st.session_state:
@@ -24,7 +24,7 @@ def main():
     with contenedor_lateral:
 
         # Sección de recetas guardadas
-        st.header("📚 Recetas Guardadas")
+        st.header("📚 Saved Recipes")
         recetas = app.carga_recetas()
         if recetas:
             st.selectbox(
@@ -36,7 +36,7 @@ def main():
             )
 
         # Sección de nueva receta
-        st.header("📝 Nueva Receta")
+        st.header("📝 New Recipe")
         st.text_area(
             "Ingredientes (separados por comas):",
             "",
@@ -71,7 +71,7 @@ def main():
         st.divider()
 
         # Sección de acerca de la aplicación
-        with st.expander("ℹ️ Acerca de la Aplicación"):
+        with st.expander("ℹ️ About the Application"):
             st.markdown(
                 """
                 Application for demonstration:
