@@ -28,7 +28,7 @@ def main():
         recetas = app.carga_recetas()
         if recetas:
             st.selectbox(
-                "Select a recipe:,
+                "Select a recipe:",
                 recetas,
                 format_func=app.formatea_nombre_receta,
                 key="widget_select_box_receta_seleccionada",
