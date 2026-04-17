@@ -170,7 +170,7 @@ def muestra_info_nutricional(receta):
     # Sección de información nutricional
     st.write("📊 **Nutritional Information**")
     datos = receta["nutricional"]
-    st.metric("Calorías", f"{datos['calorias']} kcal", border=True)
+    st.metric("Calories", f"{datos['calorias']} kcal", border=True)
     col1, col2, col3 = st.columns(3)
     col1.metric("Proteins", f"{datos['proteinas']} g", border=True)
     col2.metric("Carbohydrates", f"{datos['carbohidratos']} g", border=True)
