@@ -7,14 +7,14 @@ import streamlit as st
 import apoyo_llm_google_sdk as llm_google
 import apoyo_llm_groq_sdk as llm_groq
 import apoyo_archivos as archivos
-# from config 
-import config
+# import config 
+from config import Config
 import unicodedata
 
 # Configuraciones usadas
-CFG_FMT_FEC = config.FMT_FECHAS
-CFG_DIR_IMG = config.DIR_IMAGENES
-CFG_MOD_IMG = config.LLM_GOOGLE_MODEL_IMGE
+CFG_FMT_FEC = Config.FMT_FECHAS
+CFG_DIR_IMG = Config.DIR_IMAGENES
+CFG_MOD_IMG = Config.LLM_GOOGLE_MODEL_IMGE
 
 
 @st.cache_resource
