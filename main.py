@@ -28,7 +28,7 @@ def main():
         recetas = app.carga_recetas()
         if recetas:
             st.selectbox(
-                "Selecciona una receta:",
+                "Select a recipe:,
                 recetas,
                 format_func=app.formatea_nombre_receta,
                 key="widget_select_box_receta_seleccionada",
@@ -38,14 +38,14 @@ def main():
         # Sección de nueva receta
         st.header("📝 New Recipe")
         st.text_area(
-            "Ingredientes (separados por comas):",
+            "Ingredients (separated by commas):",
             "",
             key="widget_text_area_ingredientes",
             height=70,
         )
 
         st.radio(
-            "Selecciona el proveedor:",
+            "Select the provider:",
             ["Google", "Groq"],
             key="widget_radio_proveedor",
             horizontal=True,
@@ -54,14 +54,14 @@ def main():
         col1, col2 = st.columns(2)
         with col1:
             st.button(
-                "Generar",
+                "Trigger",
                 use_container_width=True,
                 type="primary",
                 on_click=app.maneja_genera_receta,
             )
         with col2:
             st.button(
-                "Limpiar",
+                "Clean",
                 use_container_width=True,
                 on_click=app.maneja_limpia_receta_actual,
             )
