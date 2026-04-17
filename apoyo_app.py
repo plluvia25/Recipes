@@ -197,7 +197,7 @@ def muestra_info_comparativo(receta):
 
         # Mostrar gráfica comparativa usando bar_chart
         with st.container(border=True):
-            st.write("🔥 **Calorías entre Recetas**")
+            st.write("🔥 **Calories Across Recipes**")
             st.bar_chart(df_calorias, horizontal=True, use_container_width=True)
 
 
@@ -212,7 +212,7 @@ def muestra_imagen(receta):
     """Muestra la imagen asociada a la receta si existe."""""
     #Sale de la función si el directorio no existe
     if not os.path.exists(CFG_DIR_IMG):
-        st.caption(f"🖼️ El directorio de imágenes '{CFG_DIR_IMG}' no fue encontrado.")
+        st.caption(f"🖼️ The Image Directory '{CFG_DIR_IMG}' Not found.")
         return
     #Busca la imagen
     ruta_imagen = ""
@@ -240,10 +240,10 @@ def muestra_imagen(receta):
     # Despliega la imagen
     if ruta_imagen:
         st.image(ruta_imagen, use_container_width=True)
-        with st.expander("📝 Prompt Imagen", expanded=True):
+        with st.expander("📝 Image Prompt", expanded=True):
             st.caption(receta["prompt_imagen"])
     else:
-        st.caption("🖼️ No se encontró imagen para esta receta.")
+        st.caption("🖼️ No image found for this recipe.")
 
 
 def muestra_info_footer(receta):
@@ -316,7 +316,7 @@ def genera_receta_llm(proveedor, ingredientes):
     receta = llm_clean_json(txt_response)
 
     if not receta:
-        st.error("Error al generar la receta. Por favor, intenta de nuevo.")
+        st.error("Error generating the recipe. Please try again.")
         return None
 
     # Paso 2: Calcular información nutricional
@@ -329,7 +329,7 @@ def genera_receta_llm(proveedor, ingredientes):
 
     if not nutricion:
         st.error(
-            "Error al calcular la información nutricional. Por favor, intenta de nuevo."
+            "Error calculating nutritional information. Please try again."
         )
         return None
 
