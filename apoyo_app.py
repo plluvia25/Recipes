@@ -168,7 +168,7 @@ def muestra_info_receta(receta):
 def muestra_info_nutricional(receta):
     """Muestra métricas y gráfica comparativa de información nutricional."""
     # Sección de información nutricional
-    st.write("📊 **Información Nutricional**")
+    st.write("📊 **Nutritional Information**")
     datos = receta["nutricional"]
     st.metric("Calorías", f"{datos['calorias']} kcal", border=True)
     col1, col2, col3 = st.columns(3)
