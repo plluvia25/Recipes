@@ -172,9 +172,9 @@ def muestra_info_nutricional(receta):
     datos = receta["nutricional"]
     st.metric("Calorías", f"{datos['calorias']} kcal", border=True)
     col1, col2, col3 = st.columns(3)
-    col1.metric("Proteínas", f"{datos['proteinas']} g", border=True)
-    col2.metric("Carbohidratos", f"{datos['carbohidratos']} g", border=True)
-    col3.metric("Grasas", f"{datos['grasas']} g", border=True)
+    col1.metric("Proteins", f"{datos['proteinas']} g", border=True)
+    col2.metric("Carbohydrates", f"{datos['carbohidratos']} g", border=True)
+    col3.metric("Fats", f"{datos['grasas']} g", border=True)
 
 
 def muestra_info_comparativo(receta):
