@@ -65,7 +65,7 @@ def main():
                 use_container_width=True,
                 on_click=app.maneja_limpia_receta_actual,
             )
-        st.info("Experimenta con diferentes ingredientes y observa los resultados.")
+        st.info("Experiment with different ingredients and observe the results.")
 
         # Separador
         st.divider()
