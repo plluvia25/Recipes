@@ -90,7 +90,7 @@ def maneja_genera_receta():
     proveedor = st.session_state.widget_radio_proveedor
 
     if ingredientes:
-        with st.spinner("Generando receta ...", show_time=True):
+        with st.spinner("Generating recipe ...", show_time=True):
 
              # Función de apoyo para llamadas a LLMs para generar la nueva receta
             nueva_receta = genera_receta_llm(proveedor, ingredientes)
@@ -137,7 +137,7 @@ def muestra_info_receta(receta):
     )
 
     # Mostrar ingredientes usando ul/li
-    st.write("🥗 **Ingredientes**")
+    st.write("🥗 **Ingredients**")
     with st.container():
         ingredientes_html = "<div class='compact-list'><ul>"
         for ingrediente in receta["ingredientes"]:
@@ -146,7 +146,7 @@ def muestra_info_receta(receta):
         st.markdown(ingredientes_html, unsafe_allow_html=True)
 
     # Mostrar instrucciones usando ol/li
-    st.write("📋 **Instrucciones**")
+    st.write("📋 **Instructions**")
     with st.container():
         instrucciones_html = "<div class='compact-list'><ol>"
         for instruccion in receta["instrucciones"]:
@@ -156,7 +156,7 @@ def muestra_info_receta(receta):
 
     # Mostrar notas usando ul/li si existen
     if receta["notas"]:
-        st.write("📌**Notas**")
+        st.write("📌**Grades**")
         with st.container():
             notas_html = "<div class='compact-list'><ul>"
             for nota in receta["notas"]:
