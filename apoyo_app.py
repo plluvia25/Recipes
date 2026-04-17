@@ -248,9 +248,9 @@ def muestra_imagen(receta):
 
 def muestra_info_footer(receta):
     mensaje = ""
-    mensaje += f"| **Proveedor:** {receta["proveedor"]} "
-    mensaje += f"| **Creación:** {receta['fecha']} |"
-    mensaje += f"**Ingredientes:** {', '.join(receta['iniciales'])}"
+    mensaje += f"| **Supplier:** {receta["proveedor"]} "
+    mensaje += f"| **Creation:** {receta['fecha']} |"
+    mensaje += f"**Ingredients:** {', '.join(receta['iniciales'])}"
     st.caption(mensaje)
 
 
